@@ -7,23 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F202FE827219A380086C347 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F202FE727219A380086C347 /* Extension.swift */; };
+		4F203004272283B10086C347 /* CategorySelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F203003272283B10086C347 /* CategorySelectTableViewController.swift */; };
+		4F203006272294BE0086C347 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F203005272294BE0086C347 /* CategoryTableViewCell.swift */; };
+		4FA5EEEA271D5C37000F74F0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EEE9271D5C37000F74F0 /* Constant.swift */; };
+		4FA5EEEC271D5E7D000F74F0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EEEB271D5E7D000F74F0 /* Enums.swift */; };
+		4FA5EEEE271D9D9B000F74F0 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EEED271D9D9B000F74F0 /* AddItemTableViewController.swift */; };
+		4FA5EF1C271E58D6000F74F0 /* SpendTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EF1A271E58D6000F74F0 /* SpendTracker.xcdatamodeld */; };
+		4FA5EF1F271E719F000F74F0 /* TransactionData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EF1D271E719E000F74F0 /* TransactionData+CoreDataClass.swift */; };
+		4FA5EF20271E719F000F74F0 /* TransactionData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EF1E271E719E000F74F0 /* TransactionData+CoreDataProperties.swift */; };
+		4FA5EF4E27202BC8000F74F0 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5EF4D27202BC8000F74F0 /* AccountTableViewCell.swift */; };
+		4FB6EB9A2723DEDA000CBDAA /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 4FB6EB992723DEDA000CBDAA /* Charts */; };
+		4FB6EB9C2723E333000CBDAA /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6EB9B2723E332000CBDAA /* StateTableViewCell.swift */; };
+		4FC68DB4271D405100556A4E /* TransactionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC68DB3271D405100556A4E /* TransactionItemCell.swift */; };
+		4FC68DB6271D460300556A4E /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC68DB5271D460300556A4E /* TransactionData.swift */; };
 		4FE5D2F826FDC1AC005E548D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D2F726FDC1AC005E548D /* AppDelegate.swift */; };
 		4FE5D2FA26FDC1AC005E548D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D2F926FDC1AC005E548D /* SceneDelegate.swift */; };
-		4FE5D2FC26FDC1AC005E548D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D2FB26FDC1AC005E548D /* ViewController.swift */; };
 		4FE5D2FF26FDC1AC005E548D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE5D2FD26FDC1AC005E548D /* Main.storyboard */; };
 		4FE5D30126FDC1AF005E548D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE5D30026FDC1AF005E548D /* Assets.xcassets */; };
 		4FE5D30426FDC1AF005E548D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE5D30226FDC1AF005E548D /* LaunchScreen.storyboard */; };
+		4FE5D30F26FDD0BC005E548D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D30E26FDD0BC005E548D /* MainViewController.swift */; };
+		4FE5D31326FDD184005E548D /* AccountSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D31226FDD184005E548D /* AccountSelectTableViewController.swift */; };
+		4FE5D31726FDD29D005E548D /* StateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D31626FDD29D005E548D /* StateTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F202FE727219A380086C347 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4F203003272283B10086C347 /* CategorySelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectTableViewController.swift; sourceTree = "<group>"; };
+		4F203005272294BE0086C347 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		4FA5EEE9271D5C37000F74F0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4FA5EEEB271D5E7D000F74F0 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4FA5EEED271D9D9B000F74F0 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		4FA5EF1B271E58D6000F74F0 /* SpendTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendTracker.xcdatamodel; sourceTree = "<group>"; };
+		4FA5EF1D271E719E000F74F0 /* TransactionData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4FA5EF1E271E719E000F74F0 /* TransactionData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4FA5EF4D27202BC8000F74F0 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		4FB6EB9B2723E332000CBDAA /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
+		4FC68DB3271D405100556A4E /* TransactionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemCell.swift; sourceTree = "<group>"; };
+		4FC68DB5271D460300556A4E /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
 		4FE5D2F426FDC1AC005E548D /* SpendTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE5D2F726FDC1AC005E548D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE5D2F926FDC1AC005E548D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FE5D2FB26FDC1AC005E548D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FE5D2FE26FDC1AC005E548D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE5D30026FDC1AF005E548D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE5D30326FDC1AF005E548D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE5D30526FDC1AF005E548D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE5D30E26FDD0BC005E548D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4FE5D31226FDD184005E548D /* AccountSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectTableViewController.swift; sourceTree = "<group>"; };
+		4FE5D31626FDD29D005E548D /* StateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +62,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB6EB9A2723DEDA000CBDAA /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FC68DB2271D3B8C00556A4E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5EEE9271D5C37000F74F0 /* Constant.swift */,
+				4FA5EEEB271D5E7D000F74F0 /* Enums.swift */,
+				4F202FE727219A380086C347 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4FE5D2EB26FDC1AB005E548D = {
 			isa = PBXGroup;
 			children = (
+				4FA5EF1D271E719E000F74F0 /* TransactionData+CoreDataClass.swift */,
+				4FA5EF1E271E719E000F74F0 /* TransactionData+CoreDataProperties.swift */,
 				4FE5D2F626FDC1AC005E548D /* SpendTracker */,
 				4FE5D2F526FDC1AC005E548D /* Products */,
 			);
@@ -56,15 +100,50 @@
 		4FE5D2F626FDC1AC005E548D /* SpendTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4FC68DB2271D3B8C00556A4E /* Extension */,
+				4FE5D30B26FDCA11005E548D /* Models */,
+				4FE5D30C26FDCA1A005E548D /* Views */,
+				4FE5D30D26FDCA23005E548D /* Controllers */,
 				4FE5D2F726FDC1AC005E548D /* AppDelegate.swift */,
 				4FE5D2F926FDC1AC005E548D /* SceneDelegate.swift */,
-				4FE5D2FB26FDC1AC005E548D /* ViewController.swift */,
 				4FE5D2FD26FDC1AC005E548D /* Main.storyboard */,
 				4FE5D30026FDC1AF005E548D /* Assets.xcassets */,
 				4FE5D30226FDC1AF005E548D /* LaunchScreen.storyboard */,
 				4FE5D30526FDC1AF005E548D /* Info.plist */,
+				4FA5EF1A271E58D6000F74F0 /* SpendTracker.xcdatamodeld */,
 			);
 			path = SpendTracker;
+			sourceTree = "<group>";
+		};
+		4FE5D30B26FDCA11005E548D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FC68DB5271D460300556A4E /* TransactionData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FE5D30C26FDCA1A005E548D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FC68DB3271D405100556A4E /* TransactionItemCell.swift */,
+				4FA5EF4D27202BC8000F74F0 /* AccountTableViewCell.swift */,
+				4F203005272294BE0086C347 /* CategoryTableViewCell.swift */,
+				4FB6EB9B2723E332000CBDAA /* StateTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FE5D30D26FDCA23005E548D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FE5D30E26FDD0BC005E548D /* MainViewController.swift */,
+				4FA5EEED271D9D9B000F74F0 /* AddItemTableViewController.swift */,
+				4FE5D31226FDD184005E548D /* AccountSelectTableViewController.swift */,
+				4F203003272283B10086C347 /* CategorySelectTableViewController.swift */,
+				4FE5D31626FDD29D005E548D /* StateTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +162,9 @@
 			dependencies = (
 			);
 			name = SpendTracker;
+			packageProductDependencies = (
+				4FB6EB992723DEDA000CBDAA /* Charts */,
+			);
 			productName = SpendTracker;
 			productReference = 4FE5D2F426FDC1AC005E548D /* SpendTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 4FE5D2EB26FDC1AB005E548D;
+			packageReferences = (
+				4FB6EB982723DEDA000CBDAA /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 4FE5D2F526FDC1AC005E548D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +223,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE5D2FC26FDC1AC005E548D /* ViewController.swift in Sources */,
+				4FA5EF20271E719F000F74F0 /* TransactionData+CoreDataProperties.swift in Sources */,
+				4FE5D30F26FDD0BC005E548D /* MainViewController.swift in Sources */,
+				4FC68DB4271D405100556A4E /* TransactionItemCell.swift in Sources */,
+				4FE5D31726FDD29D005E548D /* StateTableViewController.swift in Sources */,
+				4FA5EF1F271E719F000F74F0 /* TransactionData+CoreDataClass.swift in Sources */,
+				4FA5EF1C271E58D6000F74F0 /* SpendTracker.xcdatamodeld in Sources */,
+				4F203004272283B10086C347 /* CategorySelectTableViewController.swift in Sources */,
+				4FE5D31326FDD184005E548D /* AccountSelectTableViewController.swift in Sources */,
 				4FE5D2F826FDC1AC005E548D /* AppDelegate.swift in Sources */,
+				4F202FE827219A380086C347 /* Extension.swift in Sources */,
+				4FA5EF4E27202BC8000F74F0 /* AccountTableViewCell.swift in Sources */,
+				4FA5EEEA271D5C37000F74F0 /* Constant.swift in Sources */,
+				4F203006272294BE0086C347 /* CategoryTableViewCell.swift in Sources */,
+				4FB6EB9C2723E333000CBDAA /* StateTableViewCell.swift in Sources */,
+				4FC68DB6271D460300556A4E /* TransactionData.swift in Sources */,
+				4FA5EEEE271D9D9B000F74F0 /* AddItemTableViewController.swift in Sources */,
 				4FE5D2FA26FDC1AC005E548D /* SceneDelegate.swift in Sources */,
+				4FA5EEEC271D5E7D000F74F0 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +460,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FB6EB982723DEDA000CBDAA /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FB6EB992723DEDA000CBDAA /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FB6EB982723DEDA000CBDAA /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4FA5EF1A271E58D6000F74F0 /* SpendTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FA5EF1B271E58D6000F74F0 /* SpendTracker.xcdatamodel */,
+			);
+			currentVersion = 4FA5EF1B271E58D6000F74F0 /* SpendTracker.xcdatamodel */;
+			path = SpendTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4FE5D2EC26FDC1AB005E548D /* Project object */;
 }

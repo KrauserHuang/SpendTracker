@@ -17,6 +17,41 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+//        guard let tabBarController = window?.rootViewController as? UITabBarController,
+//        let navCs = tabBarController.viewControllers as? [UINavigationController] else { return }
+//
+//        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+//
+//        navCs.forEach { (navC) in
+//            switch navC.viewControllers[0] {
+//            case let mainVC as MainViewController:
+//                mainVC.container = appDelegate?.persistentContainer
+//            case let stateTVC as StateTableViewController:
+//                stateTVC.container = appDelegate?.persistentContainer
+//            default:
+//                break
+//            }
+//        }
+        
+        if let tabController = window?.rootViewController as? UITabBarController,
+           let navControllers = tabController.viewControllers as? [UINavigationController]{
+
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            
+            if navControllers.count > 0 {
+                navControllers.forEach { (navController) in
+                    switch navController.viewControllers[0]{
+                    case let controller as MainViewController:
+                        controller.container = appDelegate?.persistentContainer
+                    case let controller as StateTableViewController:
+                        controller.container = appDelegate?.persistentContainer
+                    default:
+                        break
+                    }
+                }
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -45,6 +80,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
