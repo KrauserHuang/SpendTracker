@@ -40,6 +40,8 @@ class AddItemTableViewController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(cancelEditingTap))
+//        navigationItem.leftBarButtonItem?.tintColor = .systemBackground
+        navigationController?.navigationBar.tintColor = .white
         
         if let transactionData = transactionData {
             self.transactionData = transactionData

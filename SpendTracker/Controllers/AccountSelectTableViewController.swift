@@ -21,6 +21,9 @@ class AccountSelectTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.leftBarButtonItem?.tintColor = .white
+        navigationItem.backBarButtonItem?.tintColor = .white
+        
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 44
     }

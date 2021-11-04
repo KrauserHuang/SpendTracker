@@ -34,6 +34,8 @@ class MainViewController: UIViewController, NSFetchedResultsControllerDelegate {
 //        tableView.delegate = self
         
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItemButtonTap))
+        navigationController?.navigationBar.barTintColor = UIColor(named: "MainColor")
+        navigationController?.navigationBar.tintColor = .white
         fetchData(dateStr: dateFormatter(date: Date()))
         updateUI()
     }

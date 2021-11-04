@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Calender-->
         <scene sceneID="Xi6-tB-6x8">
             <objects>
                 <viewController id="9Qd-X0-bTg" customClass="MainViewController" customModule="SpendTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -151,8 +151,9 @@
                             <constraint firstItem="ztl-7W-QiM" firstAttribute="leading" secondItem="D9g-8L-SU0" secondAttribute="leading" id="xbs-5h-g1Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="P4U-5Z-8Pa">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="Avd-kz-EgH">
+                    <navigationItem key="navigationItem" title="Calender" id="P4U-5Z-8Pa">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Avd-kz-EgH">
+                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                             <connections>
                                 <segue destination="amA-bZ-EIx" kind="presentation" modalPresentationStyle="fullScreen" id="J4V-gH-hNd"/>
                             </connections>
@@ -437,7 +438,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="kQq-BO-FaD">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" id="LDZ-bI-mr5"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="LDZ-bI-mr5">
+                            <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                        </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="mKy-Bd-Gbt">
                             <rect key="frame" x="107" y="5.5" width="200" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -449,7 +452,8 @@
                                 <action selector="changeCategory:" destination="ayG-0s-yeM" eventType="valueChanged" id="nQ1-KV-utg"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="checkmark" catalog="system" id="wP4-Xf-j4e">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="wP4-Xf-j4e">
+                            <imageReference key="image" image="checkmark" catalog="system" symbolScale="large"/>
                             <connections>
                                 <segue destination="BHJ-U2-SOO" kind="unwind" unwindAction="unwindToMainVC:" id="ufU-1u-oie"/>
                             </connections>
@@ -476,7 +480,7 @@
             </objects>
             <point key="canvasLocation" x="2437.68115942029" y="-22.098214285714285"/>
         </scene>
-        <!--Account Select Table View Controller-->
+        <!--Account-->
         <scene sceneID="Zsn-VT-a81">
             <objects>
                 <tableViewController storyboardIdentifier="AccountSelectTableViewController" id="Qnb-kt-xth" customClass="AccountSelectTableViewController" customModule="SpendTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -526,14 +530,14 @@
                             <outlet property="delegate" destination="Qnb-kt-xth" id="zYe-O7-q66"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4Zn-9d-1uU"/>
+                    <navigationItem key="navigationItem" title="Account" id="4Zn-9d-1uU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzD-f7-7d4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="m96-gx-ioE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2438" y="710"/>
         </scene>
-        <!--State Table View Controller-->
+        <!--Chart-->
         <scene sceneID="ZlD-DZ-Lle">
             <objects>
                 <tableViewController id="abE-mg-JHH" customClass="StateTableViewController" customModule="SpendTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -649,20 +653,7 @@
                             <outlet property="delegate" destination="abE-mg-JHH" id="y3c-lA-yMg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6BD-Ss-eTg">
-                        <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="czg-Vx-Lwu">
-                            <rect key="frame" x="91.5" y="5.5" width="231" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Expense"/>
-                                <segment title="Income"/>
-                            </segments>
-                            <connections>
-                                <action selector="changeCategory:" destination="abE-mg-JHH" eventType="valueChanged" id="XUx-d6-Xhq"/>
-                            </connections>
-                        </segmentedControl>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Chart" id="6BD-Ss-eTg"/>
                     <connections>
                         <outlet property="pieChartView" destination="rHB-Wp-HUH" id="vkH-V4-Vwl"/>
                     </connections>
@@ -680,6 +671,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="raW-vB-mHS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="MainColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -699,6 +696,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8op-Yw-ben">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="MainColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -737,6 +740,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="S57-Xq-pTC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="MainColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -747,7 +756,7 @@
             </objects>
             <point key="canvasLocation" x="1725" y="-22"/>
         </scene>
-        <!--Category Select Table View Controller-->
+        <!--Category-->
         <scene sceneID="aAS-Nu-Hq7">
             <objects>
                 <tableViewController storyboardIdentifier="CategorySelectTableViewController" id="N3D-1i-vcJ" customClass="CategorySelectTableViewController" customModule="SpendTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -797,7 +806,7 @@
                             <outlet property="delegate" destination="N3D-1i-vcJ" id="w3A-bq-VPb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BnR-pw-iGj"/>
+                    <navigationItem key="navigationItem" title="Category" id="BnR-pw-iGj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1V-pL-A4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="r68-Xb-kEn" userLabel="Exit" sceneMemberID="exit"/>
@@ -817,6 +826,9 @@
         <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="MainColor">
+            <color red="0.4309999942779541" green="0.74099999666213989" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="education">
             <color red="0.98400002717971802" green="0.9100000262260437" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

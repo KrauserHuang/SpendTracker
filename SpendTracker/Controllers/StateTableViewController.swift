@@ -27,6 +27,9 @@ class StateTableViewController: UITableViewController, NSFetchedResultsControlle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.backgroundColor = UIColor(named: "MainColor")
+        navigationController?.navigationBar.tintColor = .white
         // 設定圖標位置
         let legend = pieChartView.legend
         legend.horizontalAlignment = .center

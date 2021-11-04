@@ -21,6 +21,7 @@
 		4FB6EB9C2723E333000CBDAA /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6EB9B2723E332000CBDAA /* StateTableViewCell.swift */; };
 		4FC68DB4271D405100556A4E /* TransactionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC68DB3271D405100556A4E /* TransactionItemCell.swift */; };
 		4FC68DB6271D460300556A4E /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC68DB5271D460300556A4E /* TransactionData.swift */; };
+		4FDC12442733DCDE009BAB08 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC12432733DCDE009BAB08 /* TestViewController.swift */; };
 		4FE5D2F826FDC1AC005E548D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D2F726FDC1AC005E548D /* AppDelegate.swift */; };
 		4FE5D2FA26FDC1AC005E548D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5D2F926FDC1AC005E548D /* SceneDelegate.swift */; };
 		4FE5D2FF26FDC1AC005E548D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE5D2FD26FDC1AC005E548D /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		4FB6EB9B2723E332000CBDAA /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
 		4FC68DB3271D405100556A4E /* TransactionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemCell.swift; sourceTree = "<group>"; };
 		4FC68DB5271D460300556A4E /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
+		4FDC12432733DCDE009BAB08 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		4FE5D2F426FDC1AC005E548D /* SpendTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE5D2F726FDC1AC005E548D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE5D2F926FDC1AC005E548D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				4FA5EEE9271D5C37000F74F0 /* Constant.swift */,
 				4FA5EEEB271D5E7D000F74F0 /* Enums.swift */,
 				4F202FE727219A380086C347 /* Extension.swift */,
+				4FDC12432733DCDE009BAB08 /* TestViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA5EF20271E719F000F74F0 /* TransactionData+CoreDataProperties.swift in Sources */,
+				4FDC12442733DCDE009BAB08 /* TestViewController.swift in Sources */,
 				4FE5D30F26FDD0BC005E548D /* MainViewController.swift in Sources */,
 				4FC68DB4271D405100556A4E /* TransactionItemCell.swift in Sources */,
 				4FE5D31726FDD29D005E548D /* StateTableViewController.swift in Sources */,

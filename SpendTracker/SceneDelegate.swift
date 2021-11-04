@@ -18,38 +18,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-//        guard let tabBarController = window?.rootViewController as? UITabBarController,
-//        let navCs = tabBarController.viewControllers as? [UINavigationController] else { return }
-//
-//        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-//
-//        navCs.forEach { (navC) in
-//            switch navC.viewControllers[0] {
-//            case let mainVC as MainViewController:
-//                mainVC.container = appDelegate?.persistentContainer
-//            case let stateTVC as StateTableViewController:
-//                stateTVC.container = appDelegate?.persistentContainer
-//            default:
-//                break
-//            }
-//        }
-        
-        if let tabController = window?.rootViewController as? UITabBarController,
-           let navControllers = tabController.viewControllers as? [UINavigationController]{
+        guard let tabBarController = window?.rootViewController as? UITabBarController,
+        let navCs = tabBarController.viewControllers as? [UINavigationController] else { return }
 
-            let appDelegate = UIApplication.shared.delegate as? AppDelegate
-            
-            if navControllers.count > 0 {
-                navControllers.forEach { (navController) in
-                    switch navController.viewControllers[0]{
-                    case let controller as MainViewController:
-                        controller.container = appDelegate?.persistentContainer
-                    case let controller as StateTableViewController:
-                        controller.container = appDelegate?.persistentContainer
-                    default:
-                        break
-                    }
-                }
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+
+        navCs.forEach { (navC) in
+            switch navC.viewControllers[0] {
+            case let mainVC as MainViewController:
+                mainVC.container = appDelegate?.persistentContainer
+            case let stateTVC as StateTableViewController:
+                stateTVC.container = appDelegate?.persistentContainer
+            default:
+                break
             }
         }
     }
