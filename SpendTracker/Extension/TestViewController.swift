@@ -12,6 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("123")
+        print("一直失敗")
         
         // Do any additional setup after loading the view.
     }
